@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElevenLabs TTS Test</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>ElevenLabs Text to Speech Test</h1>
+  <p class="helper">
+    Uses ElevenLabs first. If the API rejects the request, the page falls back to your browser voice.
+  </p>
+
+  <textarea id="text" placeholder="Enter text here"></textarea>
+
+  <br><br>
+
+  <button id="generateBtn" onclick="generateSpeech()">Generate Speech</button>
+  <button id="playBtn" onclick="playGeneratedSpeech()" disabled>Play Speech</button>
+
+  <p id="status" aria-live="polite"></p>
+
+  <audio id="audioPlayer" controls></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
